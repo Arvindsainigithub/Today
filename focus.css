@@ -1,0 +1,144 @@
+*{
+    margin: 0x;
+    padding: 0px;
+}
+.container{
+    background-color: rgb(69, 89, 83);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    margin-bottom: 32px;
+    background-color: azure;
+    width: 60%;
+    padding: 20px;
+    border-radius: 8px;
+}
+#heading{
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    color: rgb(13, 186, 1);
+    margin-bottom: 0px;
+}
+#heading span{
+    color: rgb(69, 20, 13);
+}
+h1 img{
+   vertical-align: auto;
+   margin: 15px;
+}
+.progress-bar{
+    height: 30px;
+    width: 96%;
+    background-color: rgb(48, 138, 108);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.progress-bar span{
+    display: inline-block;
+    color: white;
+    margin-top: 5px;
+    margin-left: 10px;
+    min-width: max-content;
+}
+.progress-value{
+    height: 100%;
+    width: 0px;
+    background-color: rgb(20, 209, 146);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out; 
+}
+#progress-lable{
+   font-size: 20px;
+}
+@media(max-width:768px){
+    #heading{
+        font-size: 2rem;
+    }
+    .box{
+        height: 20px;
+        width: 20px;
+        
+    }
+    .contain{
+        height: 35px;
+        margin-bottom: 34px;
+    }
+    .child{
+        width: 85%;
+    }
+}
+.error-lable{
+    color: red;
+    position: absolute;
+    margin-top: -45px;
+    display: none;
+}
+.contain{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 46px;
+    border: solid 1px black;
+}
+.box{
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.goals{
+    width: 100%;
+    padding-left: 20px;
+    font-family: inherit;
+    font-size: 32px;
+    border: none;
+    outline: none;
+    background-color:azure ; 
+}
+.goals::placeholder{
+    color: #d9d9d9;
+}
+.more{
+    font-weight: 500;
+    text-align: center;
+    font-size: 32px;
+}
+.made{
+    text-align: center;
+    font-weight: 500;
+}
+.hide{
+    display: none;
+}
+.completed .error-lable{
+    display: block;
+}
+.completed .goals{
+    text-decoration: line-through solid rgb(29, 194, 29);
+    color:rgb(24, 246, 24) ;
+}
+.completed .hide{
+    display: block;
+}
+.completed .box{
+    background-color: rgb(16, 139, 0);
+    border: 1px solid rgb(120, 255, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sun{
+    display: flex;
+}
+.imgs{
+    margin-left: 10px;
+}
